@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="keywords" content="De Moda,Fashion" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>De Moda</title>
+    <link rel="stylesheet" href="./homepage.css">
+</head>
+
+<body>
+    <header>
+        <a href="homepage.html"><img src="logo.png" alt="De Moda" style="width:75px;height: 75px" /></a>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="payment page.html">My Cart</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">My Order</button>
+                        <div class="dropdown-content">
+                            <a href="Orders and returns.html">Order&Return</a>
+                            <a href="receipt.html">Receipt</a>
+                            <a href="historyOrder.html">History Order</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <form> <input type="search" name="search" id="search" placeholder="Search..."></form>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"> 
+                        <img src="accountLogo.png" style="width:30px;height: 30px;"/>Account</button>
+                        <div class="dropdown-content">
+                            <a href="account.html">My Account</a>
+                            <a href="login.html">Sign in</a>
+                            <a href="Demoda_SignUp.html">Sign up</a>
+                            <a href="#">Sign out</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="Left">
+            <h2>Categories</h2>
+            <div class="Categories">
+                <a href="categoriesWomen.html">
+                    <h4>Women's Clothing</h4>
+                </a>
+                <a href="categoriesWomen.html"><img id="gender"
+                        src="https://ae01.alicdn.com/kf/HTB1IQO0nRDH8KJjy1zeq6xjepXak/2018-Women-Fashion-Turtleneck-Thick-Sweater-Dresses-Plus-Size-Casual-Sexy-Knitted-Cotton-Autumn-Winter-Dress.jpg"></a>
+                <br>
+                <a href="categoriesMen.html">
+                    <h4>Men's Clothing</h4>
+                </a>
+                <a href="categoriesMen.html"><img id="gender"
+                        src="data:image/jpeg;base64,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"></a>
+                <br>
+                <a href="CategoriesKid.html">
+                    <h4>Kid's Clothing</h4>
+                </a>
+                <a href="CategoriesKid.html"><img id="gender"
+                        src="https://ae01.alicdn.com/kf/HTB1sTjyXLfsK1RjSszgq6yXzpXaP.jpg" /></a>
+                <br>
+            </div>
+        </div>
+        <div class="right">
+            <article>
+                <div class="slideImg">
+                    <div class="mySlides fade">
+                        <img src="slide1.jpeg">
+                        <div class="text">De Moda</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <a href="our product.html"><img src="slide2.jpg">
+                        <div class="text">Our Product</div></a>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <a href="Aboutus.html"><img src="slide3.JPG">
+                        <div class="text">About Us</div></a>
+                    </div>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) { slideIndex = 1 }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        setTimeout(showSlides, 2000);
+                    }
+                </script>
+
+                <h4 style="margin-top: -2%;">&#10024 NEW PRODUCTS &#10071&#10071</h4><br>
+                <table class="newProduct">
+                    <tr>
+                        <td rowspan="2"><img style="width: 300px;height:450px;"
+                                src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2019/12/28/goods-first-img/1582495575433838825.jpg">
+                        </td>
+                        <td rowspan="1/2"><img style="width: 250px;height: 250px;"
+                                src="https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i4/3327062766/O1CN010jDUT51WIs6snlV0q_!!3327062766.jpg_430x430q90.jpg">
+                        </td>
+                        <td rowspan="2"><img style="width: 400px;height: 450px;"
+                                src="https://img.alicdn.com/imgextra/i2/2949651072/O1CN01croOoA1Jn1B2DRveX_!!2949651072-0-lubanu-s.jpg_430x430q90.jpg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1/2"><img style="width: 250px;height: 190px;"
+                                src="https://img.alicdn.com/imgextra/i2/134363478/O1CN01GHn9Vr1bYy74RIxWr-134363478.jpg">
+                        </td>
+                    </tr>
+                </table>
+                
+                <div class="hot">
+                    <h4 style="margin-bottom: -1%;">&#10024 HOT SALES &#10071&#10071</h4><br>
+                    <img id="fire" src="fire.gif"><img id="fire" src="fire.gif"><img id="fire" src="fire.gif"><img
+                        id="fire" src="fire.gif"><img id="fire" src="fire.gif"><img id="fire" src="fire.gif"><img
+                        id="fire" src="fire.gif"><img id="fire" src="fire.gif"><img id="fire" src="fire.gif"><img
+                        id="fire" src="fire.gif"><img id="fire" src="fire.gif"><img id="fire" src="fire.gif"><img
+                        id="fire" src="fire.gif">
+                    <table class="hotSales">
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><img id="hotS"
+                                    src="https://img.alicdn.com/imgextra/i1/841140071/O1CN01ChTHVH1COYiWam4mU_!!0-saturn_solar.jpg_270x270.jpg">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="name" colspan="2">Long skirt bellflower French sling flower sweet dress</td>
+                        </tr>
+                        <tr>
+                            <th id="price" colspan="2">RM30.00</th>
+                        </tr>
+                        <tr>
+                            <td id="choose" colspan="1/2"><img alt=""
+                                src="https://lh3.googleusercontent.com/proxy/lyxT9szuB2RB9Xd5SrPdYDKXj4Ppz6RsKixaYnDFQvyMg19SepAXoS5lTWVM3B2N_ulTYheh4oJv64gdvY3U7g-IIBqToAWRChFLg2VfwW1It7s9iTsoIKWVQ3s"
+                                id="like" onclick="changeImage()" /></td>
+                                <td id="choose" colspan="1/2"><a href="addToCart.html"><img id="addCart" src="addToCart.png"
+                                    alt="addToCart"></a></td>
+                        </tr>
+                    </table>
+                    <table class="hotSales">
+                        <tr>
+                            <td colspan="2"><img id="hotS"
+                                    src="https://g-search1.alicdn.com/img/bao/uploaded/i4/i1/2907020071/O1CN011D6YyS1COYhWg0LN6_!!0-item_pic.jpg_580x580Q90.jpg_.webp">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="name" colspan="2">Hyuna Super Fairy Forest Midi Dress</td>
+                        </tr>
+                        <tr>
+                            <th id="price" colspan="2">RM55.00</th>
+                        </tr>
+                        <tr>
+                            <td id="choose" colspan="1/2"><img alt=""
+                                src="https://lh3.googleusercontent.com/proxy/lyxT9szuB2RB9Xd5SrPdYDKXj4Ppz6RsKixaYnDFQvyMg19SepAXoS5lTWVM3B2N_ulTYheh4oJv64gdvY3U7g-IIBqToAWRChFLg2VfwW1It7s9iTsoIKWVQ3s"
+                                id="like1" onclick="changeImage1()" /></td>
+                                <td id="choose" colspan="1/2"><a href="addToCart.html"><img id="addCart" src="addToCart.png"
+                                    alt="addToCart"></a></td>
+                        </tr>
+                    </table>
+                    <table class="hotSales">
+                        <tr>
+                            <td colspan="2"><img id="hotS"
+                                    src="https://g-search3.alicdn.com/img/bao/uploaded/i4/i1/748042622/O1CN01UgDoR81VEv4ijgfWx_!!0-item_pic.jpg_580x580Q90.jpg_.webp">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="name" colspan="2">Summer Korean trend loose round neck cotton shirt</td>
+                        </tr>
+                        <tr>
+                            <th id="price" colspan="2">RM20.00</th>
+                        </tr>
+                        <tr>
+                            <td id="choose" colspan="1/2"><img alt=""
+                                src="https://lh3.googleusercontent.com/proxy/lyxT9szuB2RB9Xd5SrPdYDKXj4Ppz6RsKixaYnDFQvyMg19SepAXoS5lTWVM3B2N_ulTYheh4oJv64gdvY3U7g-IIBqToAWRChFLg2VfwW1It7s9iTsoIKWVQ3s"
+                                id="like2" onclick="changeImage2()" /></td>
+                                <td id="choose" colspan="1/2"><a href="addToCart.html"><img id="addCart" src="addToCart.png"
+                                    alt="addToCart"></a></td>
+                        </tr>
+                    </table>
+                    <table class="hotSales">
+                        <tr>
+                            <td colspan="2"><img id="hotS"
+                                    src="https://g-search3.alicdn.com/img/bao/uploaded/i4/i1/1776477331/O1CN01INVozr241e8wLIpxm_!!0-item_pic.jpg_580x580Q90.jpg_.webp">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="name" colspan="2">Spring and autumn men's new long-sleeved T-shirt</td>
+                        </tr>
+                        <tr>
+                            <th id="price" colspan="2">RM30.00</th>
+                        </tr>
+                        <tr>
+                            <td id="choose" colspan="1/2"><img alt=""
+                                src="https://lh3.googleusercontent.com/proxy/lyxT9szuB2RB9Xd5SrPdYDKXj4Ppz6RsKixaYnDFQvyMg19SepAXoS5lTWVM3B2N_ulTYheh4oJv64gdvY3U7g-IIBqToAWRChFLg2VfwW1It7s9iTsoIKWVQ3s"
+                                id="like3" onclick="changeImage3()" /></td>
+                                <td id="choose" colspan="1/2"><a href="addToCart.html"><img id="addCart" src="addToCart.png"
+                                    alt="addToCart"></a></td>
+                        </tr>
+                    </table>
+
+                </div>
+                <br>
+                <div class="promotion">
+                    <h4 style="margin-top:-1.5%"><a href="promotion50.html">&#10024 PROMOTION & DEALS &#10071&#10071</h4>
+                    <img src="./promotion.jpg"><p style="float: right; margin-top: -2%;">Promotion Products &#9755</p></a>
+                </div>
+            </article>
+        </div>
+        
+    </section><script>
+            function changeImage() {
+                if (document.getElementById("like").src == "https://lh3.googleusercontent.com/proxy/lyxT9szuB2RB9Xd5SrPdYDKXj4Ppz6RsKixaYnDFQvyMg19SepAXoS5lTWVM3B2N_ulTYheh4oJv64gdvY3U7g-IIBqToAWRChFLg2VfwW1It7s9iTsoIKWVQ3s") {
+                    document.getElementById("like").src = "https://pngimg.com/uploads/love/love_PNG8.png";
+                }
+                else {
+                    document.getElementById("like").src = "https://lh3.googleusercontent.com/proxy/lyxT9szuB2RB9Xd5SrPdYDKXj4Ppz6RsKixaYnDFQvyMg19SepAXoS5lTWVM3B2N_ulTYheh4oJv64gdvY3U7g-IIBqToAWRChFLg2VfwW1It7s9iTsoIKWVQ3s";
+                }
+            }
+            function changeImage1() {
+                if (document.getElementById("like1").src == "https://lh3.googleusercontent.com/proxy/lyxT9szuB2RB9Xd5SrPdYDKXj4Ppz6RsKixaYnDFQvyMg19SepAXoS5lTWVM3B2N_ulTYheh4oJv64gdvY3U7g-IIBqToAWRChFLg2VfwW1It7s9iTsoIKWVQ3s") {
+                    document.getElementById("like1").src = "https://pngimg.com/uploads/love/love_PNG8.png";
+                }
+                else {
+                    document.getElementById("like1").src = "https://lh3.googleusercontent.com/proxy/lyxT9szuB2RB9Xd5SrPdYDKXj4Ppz6RsKixaYnDFQvyMg19SepAXoS5lTWVM3B2N_ulTYheh4oJv64gdvY3U7g-IIBqToAWRChFLg2VfwW1It7s9iTsoIKWVQ3s";
+                }
+            }
+            function changeImage2() {
+                if (document.getElementById("like2").src == "https://lh3.googleusercontent.com/proxy/lyxT9szuB2RB9Xd5SrPdYDKXj4Ppz6RsKixaYnDFQvyMg19SepAXoS5lTWVM3B2N_ulTYheh4oJv64gdvY3U7g-IIBqToAWRChFLg2VfwW1It7s9iTsoIKWVQ3s") {
+                    document.getElementById("like2").src = "https://pngimg.com/uploads/love/love_PNG8.png";
+                }
+                else {
+                    document.getElementById("like2").src = "https://lh3.googleusercontent.com/proxy/lyxT9szuB2RB9Xd5SrPdYDKXj4Ppz6RsKixaYnDFQvyMg19SepAXoS5lTWVM3B2N_ulTYheh4oJv64gdvY3U7g-IIBqToAWRChFLg2VfwW1It7s9iTsoIKWVQ3s";
+                }
+            }
+            function changeImage3() {
+                if (document.getElementById("like3").src == "https://lh3.googleusercontent.com/proxy/lyxT9szuB2RB9Xd5SrPdYDKXj4Ppz6RsKixaYnDFQvyMg19SepAXoS5lTWVM3B2N_ulTYheh4oJv64gdvY3U7g-IIBqToAWRChFLg2VfwW1It7s9iTsoIKWVQ3s") {
+                    document.getElementById("like3").src = "https://pngimg.com/uploads/love/love_PNG8.png";
+                }
+                else {
+                    document.getElementById("like3").src = "https://lh3.googleusercontent.com/proxy/lyxT9szuB2RB9Xd5SrPdYDKXj4Ppz6RsKixaYnDFQvyMg19SepAXoS5lTWVM3B2N_ulTYheh4oJv64gdvY3U7g-IIBqToAWRChFLg2VfwW1It7s9iTsoIKWVQ3s";
+                }
+            }
+        </script>
+    <footer>
+        <nav id="footer">
+            <ul>
+                <li><a href="Aboutus.html">About us</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="Contactus.html">Contact us</a></li>
+                <li><a href="T&C.html">T&C</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li>Follow Us:
+                    <div class="social">
+                        <a href="https://www.facebook.com/" class="link facebook" target="_parent"><span
+                                class="fa fa-facebook-square"></span></a>
+                        <a href="https://twitter.com/" class="link twitter" target="_parent"><span
+                                class="fa fa-twitter"></span></a>
+                        <a href="https://www.instagram.com/de_moda_2020/" class="link instagram" target="_parent"><span
+                                class="fa fa-instagram"></span></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

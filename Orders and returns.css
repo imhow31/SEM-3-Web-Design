@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+html{
+    background-color: rgba(85, 107, 47, 0.288);
+}
+
+ul#menu > h2 > li, ul#myAccount > h3 > li{
+    list-style-type: none;
+    margin: 1em 1em 5px 0;
+    font-size: 25px;
+}
+
+ul#menu > h2 > li > a, ul#myAccount > h3 > li > a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+ul#menu > h3 > li > a:hover, ul#myAccount > h3 > li > a:hover{
+    display: inline-block;
+    background-color: gray;
+}
+
+div#menuLayout{
+    width: 20%;
+    float: left;
+    margin-top: 4em;
+}
+
+div#myAccountLayout{
+    width: 80%;
+    float: left;
+}
+
+h1{
+    margin: 2.5em 0 10px 0;
+}
+
+ul#myAccount > h3 {
+    margin-bottom: 0;
+}
+
+h2.logoutStyle, .logoutStyle{
+    font-size: 17.5px;
+    margin-top: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;    
+}
+
+.detailInfo table, .shippingInfo table{
+    width: 960px;
+    margin-left: 19rem;
+    border-collapse: collapse;
+}
+
+.detailInfo tr{
+    background-color: rgba(85, 107, 47, 0.288);
+}
+
+.detailInfo td#order{
+    text-align: left;
+}
+
+.detailInfo p{
+    margin: 8px 0 8px 20px;
+}
+
+.detailInfo td#total{
+    text-align: right;
+    padding-right: 20px;
+}
+
+#deliverDate td#date{
+    padding-left: 20px;
+    width: 600px;
+    padding-top: 10px;
+}
+
+#deliverDate td#type{
+    padding-right: 15px;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.shippingInfo table{
+    background-color: rgba(85, 107, 47, 0.288);
+}
+
+.status td{
+    width: 25%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#deliveredDetails td{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 0 50px 0;
+}
+
+#details1{
+    padding: 0 50px;
+}
+
+.img_label{
+    width: 40%;
+    vertical-align: top;
+}
+
+#price{
+    width: 20%;
+    vertical-align: top;
+}
+
+#qty{
+    width: 20%;
+    vertical-align: top;
+}
+
+.review{
+    width: 20%;
+    vertical-align: top;
+}
+
+.img_label img{
+    float: left;
+    height: auto;
+    width: 100px;
+    padding: 0 20px 20px 20px;
+}
+
+.img_label label{
+    float: left;
+    width: 200px;
+    font-size: 30px;
+    margin: 0 0 0 0;
+}
+
+.review a{
+    text-decoration: none;
+    color: #055969;
+}
+
+
+section{
+    clear: both;
+    content: "";
+}

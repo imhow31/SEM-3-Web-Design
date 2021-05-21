@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="payment page.css">
+</head>
+<body>
+    <header>
+        <a href="homepage.html"><img src="logo.png" alt="De Moda" style="width:75px;height: 75px" /></a>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="payment page.html">My Cart</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">My Order</button>
+                        <div class="dropdown-content">
+                            <a href="Orders and returns.html">Order&Return</a>
+                            <a href="receipt.html">Receipt</a>
+                            <a href="historyOrder.html">History Order</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <form> <input type="search" name="search" id="search" placeholder="Search..."></form>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"> 
+                        <img src="accountLogo.png" style="width:30px;height: 30px;"/>Account</button>
+                        <div class="dropdown-content">
+                            <a href="account.html">My Account</a>
+                            <a href="login.html">Sign in</a>
+                            <a href="Demoda_SignUp.html">Sign up</a>
+                            <a href="#">Sign out</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+    <div id="deModa_playground">
+        <div id="itemsLayout">
+            <div id="selectAllBox">
+                <script>
+                    function toggle(source) {
+                        checkboxes = document.getElementsByName('cartItems');
+                        for(var i=0, n=checkboxes.length;i<n;i++) {
+                            checkboxes[i].checked = source.checked;
+                        }
+                    }
+                </script>
+                <input type="checkBox" name="allCheck" id="checkAllBox" onClick="toggle(this)">
+                <span id="selectAll">SELECT ALL ITEMS</span>
+            </div>
+            <br>
+
+            <div id="items1">
+
+                <div id="cartLeft">
+                    <input type="checkbox" name="cartItems" id="checkBox">
+                    <img src="https://uniqistic.com/wp-content/uploads/2018/01/752234169-1.jpg" alt="">
+                    <label id="items">Women dress</label>
+                </div>
+
+                <div id="cartMid">
+                    <p>RM7, 295.00</p>
+                    <p><s>RM9,000,000.00</s></p>
+                    <p>-99.92%</p>
+                </div>
+
+                <div class="number-input">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                    <input class="quantity" min="0" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                </div>
+            </div>
+            <br>
+
+            <div id="items2">
+                <div id="cartLeft">
+                    <input type="checkbox" name="cartItems" id="checkBox">
+                    <img src="https://ae01.alicdn.com/kf/Ha8d4d2f1f4e540a1b0fb8fa8bba94b2c6/New-Mens-Blazer-Jacket-Men-s-Casual-Slim-Fit-Suit-Coats-Men-Casual-Korean-Jacket-Coat.jpg" 
+                    alt="">
+                    <label id="items">Men shirt</label>
+                </div>
+
+                <div id="cartMid">
+                    <p>RM3, 159.20</p>
+                    <p><s>RM5,000.50</s></p>
+                    <p>-36.82%</p>
+                </div>
+
+                <div id="cartRight">
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                        <input class="quantity" min="0" name="quantity" value="1" type="number">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+
+            <div id="items3">
+
+                <div id="cartLeft">
+                    <input type="checkbox" name="cartItems" id="checkBox">
+                    <img src="https://image.made-in-china.com/202f0j00MYPfvRGBgLoA/Boys-Shirts-Baby-Boy-Clothes-Kids-Children-Clothing-Summer.jpg" alt="">
+                    <label id="items">Boy shirt</label>
+                </div>
+
+                <div id="cartMid">
+                    <p>RM9, 000.99</p>
+                    <p><s>RM1,000,000.00</s></p>
+                    <p>-99.10%</p>
+                </div>
+
+                <div id="cartRight">
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                        <input class="quantity" min="0" name="quantity" value="1" type="number">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+
+            <div id="items4">
+
+                <div id="cartLeft">
+                    <input type="checkbox" name="cartItems" id="checkBox">
+                    <img src="https://www.dhresource.com/0x0/f2/albu/g5/M00/F6/67/rBVaJFmH0meAdwaqAAFGEXr2Ol0860.jpg" alt="">
+                    <label id="items">Girl dress</label>
+                </div>
+
+                <div id="cartMid">
+                    <p>RM1, 123, 456.78</p>
+                    <p><s>RM8,888,888.88</s></p>
+                    <p>-87.36%</p>
+                </div>
+
+                <div id="cartRight">
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                        <input class="quantity" min="0" name="quantity" value="1" type="number">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div id="summaryLayout">
+            <div id="summaryContainer">
+                <div id="summaryAddress">
+                    <p id="addP">Location</p>
+                    <img id="addImg" src="https://pngriver.com/wp-content/uploads/2018/04/Download-Map-Marker-Png-Image-78555-For-Designing-Projects.png" alt="">
+                    <span id="addSpan">Wp Kuala Lumpur, Kuala Lumpur, 53200</span>
+                </div>
+                <hr>
+                <div id="orderSummary">
+                    <h3>Order Summary</h3>
+                </div>
+                <div id="subTotalCount">
+                    <table>
+                        <tr>
+                            <td><span id="subtotal">Subtotal</span></td>
+                            <td><span id="subtotalCount">RM500.00</span></td>
+                        </tr>
+                        <tr>
+                            <td><span id="shippingFee">Shipping Fee</span></td>
+                            <td><span id="shippingCount">RM 10.00</span></td>
+                        </tr>
+                        <tr>
+                            <td><span id="total">Total</span></td>
+                            <td><span id="totalCount">RM510.00</span></td>
+                        </tr>
+                    </table>                    
+                </div>
+                <div>
+                    <a href="check out methods.html"><input type="submit" name="" id="checkoutButton" value="PROCEED TO CHECKOUT"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    
+
+<footer>
+    <nav id="footer">
+        <ul>
+            <li><a href="Aboutus.html">About us</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="Contactus.html">Contact us</a></li>
+            <li><a href="T&C.html">T&C</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li>Follow Us:
+                <div class="social">
+                    <a href="https://www.facebook.com/" class="link facebook" target="_parent"><span
+                            class="fa fa-facebook-square"></span></a>
+                    <a href="https://twitter.com/" class="link twitter" target="_parent"><span
+                            class="fa fa-twitter"></span></a>
+                    <a href="https://www.instagram.com/de_moda_2020/" class="link instagram" target="_parent"><span
+                            class="fa fa-instagram"></span></a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>

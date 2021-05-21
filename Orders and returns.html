@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - Orders and Returns | De Moda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="Orders and returns.css">
+</head>
+<body>
+    <header>
+        <a href="homepage.html"><img src="logo.png" alt="De Moda" style="width:75px;height: 75px" /></a>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="payment page.html">My Cart</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">My Order</button>
+                        <div class="dropdown-content">
+                            <a href="Orders and returns.html">Order&Return</a>
+                            <a href="receipt.html">Receipt</a>
+                            <a href="historyOrder.html">History Order</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <form> <input type="search" name="search" id="search" placeholder="Search..."></form>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"> 
+                        <img src="accountLogo.png" style="width:30px;height: 30px;"/>Account</button>
+                        <div class="dropdown-content">
+                            <a href="account.html">My Account</a>
+                            <a href="login.html">Sign in</a>
+                            <a href="Demoda_SignUp.html">Sign up</a>
+                            <a href="#">Sign out</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+    <div id="menuLayout">
+        <ul id="menu">
+            <h2><li><a href="account.html">My account</a></li></h2>
+            <h2><li><a href="address book.html">Address book</a></li></h2>
+            <h2><li><a href="Personal details.html">Personal details</a></li></h2>
+            <h2><li><a href="Access details.html">Access details</a></li></h2>
+            <h2><li><a href="DeModa_Subscribe.html">Newsletter</a></li></h2>
+            <h2 class="logoutStyle"><li><a href="DeModa_SignUp.html" class="logoutStyle">Log out</a></li></h2>
+        </ul>
+    </div>
+        
+    <div id="myAccountLayout">
+        <ul id="myAccount">
+            <h1>Orders and Returns</h1>
+                <span>Check the status and information regarding your online orders. You can also cancel the order or request a refund.</span>
+        </ul>
+    </div>
+    
+    <div class="detailInfo">
+        <table>
+            <tr>
+                <td id="order">
+                    <p>Order #4589310578202</p>
+                    <p>Placed on 12/04/2020</p>
+                </td>
+                <td id="total">
+                    <span>Total:</span>
+                    <span>RM400.00</span>
+                </td>
+            </tr>
+        </table>
+    </div><br>
+
+    <div class="shippingInfo">
+        <table>
+            <tr id="deliverDate">
+                <td id="date"><span>Delivered on 29 Apr 2020</span></td>
+                <td id="type"><span>Standard delivery</span></td>
+            </tr>
+        </table>
+        <table>
+            <tr id="img">
+                <td style="text-align: center;padding-top: 10px;"><img style="width: 800px;" src="delivering status bar.PNG" alt=""></td>
+            </tr>
+        </table>
+        <table>
+            <tr class="status">
+                <td>Payment pending</td>
+                <td>Processing</td>
+                <td>Shipped</td>
+                <td>Delivered</td>
+            </tr>
+        </table><br>
+        <table>    
+            <tr id="deliveredDetails">
+                <td>
+                    <span id="details1">29 Apr 2020</span>
+                    <span id="details2">Your package has been delivered. Thank you for shopping at De Moda.</span>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr class="deliverItems">
+                <td class="img_label">
+                    <img src="https://img.alicdn.com/imgextra/i2/3001816434/O1CN01tHjmIq1xOos197hVm_!!0-item_pic.jpg_430x430q90.jpg" alt="">
+                    <label>Straight jeans (De Moda)</label>
+                </td>
+                <td id="price">RM30.00</td>
+                <td id="qty">Qty: 1</td>
+                <td class="review">
+                    <a href=""><span>RETURN</span><br></a>
+                    <span>until 14 May 2020</span><br><br>
+                    <a href=""><span>WRITE A REVIEW</span></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+    <footer>
+        <nav id="footer">
+            <ul>
+                <li><a href="Aboutus.html">About us</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="Contactus.html">Contact us</a></li>
+                <li><a href="T&C.html">T&C</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li>Follow Us:
+                    <div class="social">
+                        <a href="https://www.facebook.com/" class="link facebook" target="_parent"><span
+                                class="fa fa-facebook-square"></span></a>
+                        <a href="https://twitter.com/" class="link twitter" target="_parent"><span
+                                class="fa fa-twitter"></span></a>
+                        <a href="https://www.instagram.com/de_moda_2020/" class="link instagram" target="_parent"><span
+                                class="fa fa-instagram"></span></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

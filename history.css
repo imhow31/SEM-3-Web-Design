@@ -1,0 +1,124 @@
+body{
+    background-color: rgb(186, 223, 228);
+}
+section{
+    background-color: rgb(169, 236, 236);
+    margin-top: -2.6%;
+}
+.title{
+    text-align: center;
+    border-bottom: 2px dotted black;
+    height: 130px;
+    color: rgb(2, 2, 48);
+    background-color: rgb(183, 232, 241);
+}
+.orderHistory{
+    margin-top: 1%;
+    margin-bottom: 2%;
+ 
+}
+.orderHistory table.orderList{
+    margin-left: 20%;
+    margin-bottom: 2%;
+    border: 3px solid black;
+    min-width: 60%;
+    max-width: 60%;
+    height: 180px;
+    background-color: rgb(226, 247, 248);
+}
+.orderHistory img#imgProd{
+    width: 185px;
+    height: 185px;
+    border: 5px dotted black;
+    margin-bottom: -5px;
+    margin-top: 3px;
+}
+.orderHistory td#prodName{
+    font-size: 35px;
+    padding-left: 3px;
+}
+.orderHistory td#prodSize,td#prodQuantiti{
+    font-size: 22px;
+    opacity: 0.8;
+    padding-left: 3px;
+    text-align: left;
+}
+.orderHistory td#prodPrice{
+    font-size: 22px;
+    text-align: right;
+    opacity: 0.8;
+}
+.orderHistory td#other,td#showDetails{
+    text-align: center;
+    font-size: 22px;
+    border-top: 1px solid rgb(54, 53, 53);
+    opacity: 0.9;
+}
+.orderHistory td#showDetails a{
+    text-decoration: none;
+    font-size: 22px;
+}
+.orderHistory td#showDetails a:active{
+    text-decoration: none;
+    font-size: 22px;
+    color: blue;
+}
+.orderHistory td#totalPrice{
+    font-size: 25px;
+    text-align: right;
+    border-top: 2px solid black;
+    
+}
+.orderDetails{
+    margin-top: 2%;
+    font-family: 'Comic Sans MS',sans-serif;
+}
+.orderDetails img#prod{
+    width: 200px;
+    height: 200px;
+    border: 5px dotted black;
+}
+.address{
+    text-align: center;
+}
+.address h3{
+    font-size: 25px;
+    text-decoration: underline overline;
+}
+.address p{
+    font-size: 18px;
+    margin-top: -2%;
+}
+.orderDetails table{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 1%;
+    border: 2px solid black;
+    margin-bottom: 5%;
+    background-color: rgb(226, 247, 248);
+}
+.orderDetails td#prodName{
+    font-size: 25px;
+}
+.orderDetails td#prodSize,.orderDetails td#prodQuantiti{
+    font-size: 20px;
+    opacity: 0.5;
+}
+.orderDetails td#prodPrice{
+    font-size: 20px;
+}
+.orderDetails td#shipping, .orderDetails td#totalPrice{
+    font-size: 25px;
+    text-align: right;
+}
+.orderDetails td#shipping{
+    border-top: 2px solid black;
+}
+.orderDetails td#orderTime, .orderDetails td#ship,.orderDetails td#completed{
+    font-size: 20px;
+    opacity: 0.5;
+    text-align: right;
+}
+.orderDetails td#orderTime{
+    border-top: 2px solid black;
+}

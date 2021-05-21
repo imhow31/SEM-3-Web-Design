@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Locator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="Store Locator.css">
+
+</head>
+<body> 
+    <header>
+        <a href="homepage.html"><img src="logo.png" alt="De Moda" style="width:75px;height: 75px" /></a>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="payment page.html">My Cart</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">My Order</button>
+                        <div class="dropdown-content">
+                            <a href="Orders and returns.html">Order&Return</a>
+                            <a href="receipt.html">Receipt</a>
+                            <a href="historyOrder.html">History Order</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <form> <input type="search" name="search" id="search" placeholder="Search..."></form>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"> 
+                        <img src="accountLogo.png" style="width:30px;height: 30px;"/>Account</button>
+                        <div class="dropdown-content">
+                            <a href="account.html">My Account</a>
+                            <a href="login.html">Sign in</a>
+                            <a href="Demoda_SignUp.html">Sign up</a>
+                            <a href="#">Sign out</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+
+    <h1>Our Stores Locations</h1>
+    <div id="map"></div>
+    <script>
+        function initMap(){
+            //map options
+            var options = {
+                zoom: 6.5,
+                center: {lat: 4.249241, lng: 102.022100}
+            };
+            
+            //new map
+            var map = new google.maps.Map(document.getElementById('map'), options);
+            
+            //markers & infoWindows array declaration
+            var markers = [];
+            var infoWindows = [];
+
+            //add KUL markers
+            markers[0] = new google.maps.Marker({
+                position: {lat: 3.2046, lng: 101.7208},
+                map:map
+                });
+
+            //add KUL info window
+            infoWindows[0] = new google.maps.InfoWindow({
+                content: '<h1>De Moda KUL</h1>'
+            });
+
+            //add KUL listener
+            markers[0].addListener('click', function(){
+                    infoWindows[0].open(map, markers[0]);
+            });
+
+
+
+            //add PNG markers
+            markers[1] = new google.maps.Marker({
+                position: {lat: 5.4377, lng: 100.2907},
+                map:map
+            });
+
+            //add PNG info window
+            infoWindows[1] = new google.maps.InfoWindow({
+                content: '<h1>De Moda PNG<h1>'
+            });
+
+            //add PNG listener
+            markers[1].addListener('click', function(){
+                    infoWindows[1].open(map, markers[1]);
+            });            
+
+
+
+            //add JHR markers
+            markers[2] = new google.maps.Marker({
+                position: {lat: 1.4992, lng: 103.6493},
+                map:map
+            });
+
+            //add JHR info window
+            infoWindows[2] = new google.maps.InfoWindow({
+                content: '<h1>De Moda JHR</h1>'
+            });
+            
+            //add JHR listener
+            markers[2].addListener('click', function(){
+                    infoWindows[2].open(map, markers[2]);
+            });
+        }
+    </script>
+
+    <p>Click on the red markers for more info. <img src="magnifying glass.png" id="magnifying"></p>
+
+    <!-- api key insertion -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcQwQdLSA-JmUqZ9l0pwSOwoRDUKAFajg&callback=initMap">
+    </script>
+
+    <div id="deModaJHR">
+        <h2>De Moda Johor</h2>
+        <span>Operation Hours: 10am-10pm</span>
+        <address>27, Jalan Nusa Jaya Mas 1/1, Taman Nusa Jaya Mas, 81300 Johor Bahru, Johor</address>
+        <span>Tel: 03-4032 5217 / 010-902 8541</span><br>
+        <a href="https://goo.gl/maps/Z2Qq8Ggp9XVQcvsQA"><img src="De Moda JHR.jpg" alt="De Moda Johor" id="deModa"></a>
+    </div>
+
+    <div id="deModaKUL">
+        <h2>De Moda Kuala Lumpur</h2>
+        <span>Operation Hours: 10am-10pm</span>
+        <address>67, Jalan Taman Ibu Kota, Taman Danau Kota, 53300 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</address>
+        <span>Tel: 03-4032 4153 / 010-753 9588</span><br>
+        <a href="https://goo.gl/maps/cYrte1sr7S33H26A8"><img src="De Moda KUL.jpg" alt="De Moda Kuala Lumpur" id="deModa"></a>
+    </div>
+
+    <div id="deModaPNG">
+        <h2>De Moda Penang</h2>
+        <span>Operation Hours: 10am-10pm</span>
+        <address>Kompleks Pentadbiran,Bangunan Pavilion, Jalan Kebun Bunga, 10350 George Town, Pulau Pinang</address>
+        <span>Tel: 03-4032 8595 / 010-568 3625</span><br>
+        <a href="https://goo.gl/maps/Y7DDgxMjx5mS6msf7"><img src="De Moda PNG.jpg" alt="De Moda Penang" id="deModa"></a>        
+    </div>
+</section>    
+
+    <footer>
+        <nav id="footer">
+            <ul>
+                <li><a href="Aboutus.html">About us</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="Contactus.html">Contact us</a></li>
+                <li><a href="T&C.html">T&C</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li>Follow Us:
+                    <div class="social">
+                        <a href="https://www.facebook.com/" class="link facebook" target="_parent"><span
+                                class="fa fa-facebook-square"></span></a>
+                        <a href="https://twitter.com/" class="link twitter" target="_parent"><span
+                                class="fa fa-twitter"></span></a>
+                        <a href="https://www.instagram.com/de_moda_2020/" class="link instagram" target="_parent"><span
+                                class="fa fa-instagram"></span></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

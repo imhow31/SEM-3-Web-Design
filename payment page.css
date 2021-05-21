@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+div#itemsLayout{
+    float: left;
+    width: 60%;
+}
+
+div#summaryLayout{
+    float: right;
+    width: 38%;
+}
+
+#selectAllBox{
+    background-color: rgba(47, 103, 107, 0.2);
+    height: 40px;
+    vertical-align: middle;
+}
+
+input#checkAllBox{
+    width: 1.5em;
+    height: 1.5em;
+    margin: 10px 10px;
+    float: left;
+}
+
+span#selectAll{
+    float: left;
+    margin: 10px 0 10px 0;
+}
+
+#items1, #items2, #items3, #items4{
+    background-color: rgba(47, 103, 107, 0.2);
+    height: 100px;
+    width: 100%;
+    text-align: left;
+    display: table;
+    padding: 15px 0;
+}
+
+#cartLeft{
+    display: table-cell;
+    vertical-align: middle;
+    width: 40%;
+}
+
+#cartMid{
+    display: table-cell;
+    vertical-align: middle;
+    width: 34%;
+}
+
+#cartRight{
+    display: table-cell;
+    width: 26%;
+}
+
+input#checkBox{
+    float: left;
+    height: 1.5em;
+    width: 1.5em;
+    margin: 27.5px 10px;
+}
+
+img{
+    float: left;
+    height: 80px;
+    width: 80px;
+}
+
+label#items{
+    float: left;
+    padding: 30px 10px;
+}
+
+p{
+    margin: 3px;
+}
+
+#summaryContainer{
+    background-color: rgba(47, 103, 107, 0.2);
+}
+
+#checkoutButton{
+    width: 90%;
+    height: 40px;
+    font: inherit;
+    font-size: 20px;
+    margin: 5px 23px;
+    border-style: solid;
+    background-color: #58fff1;
+    border-color: transparent;
+}
+
+#checkoutButton:hover{
+    width: 90%;
+    height: 40px;
+    font: inherit;
+    font-size: 20px;
+    margin: 5px 23px;
+    border-style: solid;
+    background-color: #4c9c96f5;
+    border-color: transparent;
+}
+
+span#addSpan{
+    display: block;
+    padding: 5px 10px 5px 10px;
+}
+
+img#addImg{
+    height: 30px;
+    width: 30px;
+    padding-top: 0px;
+}
+
+#addP{
+    padding: 10px 10px 0 10px;
+}
+
+h3{
+    padding: 10px 10px 10px 10px;
+    margin: 0 0 0 0; 
+ }
+
+#subtotal, #shippingFee, span#total{
+    text-align: left;
+    margin: 10px 240px 10px 20px;
+}
+
+#rightCounter{
+    width: 50px;
+    text-align: center;
+}
+  
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+}
+
+.number-input {
+    margin-top: 25px;
+    border: 2px solid gray;
+    display: inline-flex;
+}
+
+.number-input,
+.number-input * {
+    box-sizing: border-box;
+}
+
+.number-input button {
+    outline:none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+}
+
+.number-input button:before,
+.number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 1rem;
+    height: 1px;
+    background-color: #212121;
+    transform: translate(-50%, -50%);
+}
+
+.number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.number-input input[type=number] {
+    font-family: sans-serif;
+    max-width: 5rem;
+    padding: .5rem;
+    border: solid gray;
+    border-width: 0 2px;
+    font-size: 1rem;
+    height: 2rem;
+    text-align: center;
+}
+
+input.quantity{
+    background-color: transparent;
+}
+
+#subtotalCount, #shippingCount, #totalCount{
+    padding-right: 20px;
+    padding-left: 10px;
+    line-height: 30px;
+}
+
+section{
+    clear: both;
+    content: "";
+    font-family: 'Comic Sans MS', serif !important;
+    font-size: large;
+}
