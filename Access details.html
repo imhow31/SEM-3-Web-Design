@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - Access Details | De Moda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="Access details.css">
+</head>
+<body>
+    <header>
+        <a href="homepage.html"><img src="logo.png" alt="De Moda" style="width:75px;height: 75px" /></a>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="payment page.html">My Cart</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">My Order</button>
+                        <div class="dropdown-content">
+                            <a href="Orders and returns.html">Order&Return</a>
+                            <a href="receipt.html">Receipt</a>
+                            <a href="historyOrder.html">History Order</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <form> <input type="search" name="search" id="search" placeholder="Search..."></form>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"> 
+                        <img src="accountLogo.png" style="width:30px;height: 30px;"/>Account</button>
+                        <div class="dropdown-content">
+                            <a href="account.html">My Account</a>
+                            <a href="login.html">Sign in</a>
+                            <a href="Demoda_SignUp.html">Sign up</a>
+                            <a href="#">Sign out</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+    <div id="menuLayout">
+        <ul id="menu">
+            <h2><li><a href="account.html">My account</a></li></h2>
+            <h2><li><a href="address book.html">Address book</a></li></h2>
+            <h2><li><a href="Personal details.html">Personal details</a></li></h2>
+            <h2><li><a href="Access details.html">Access details</a></li></h2>
+            <h2><li><a href="DeModa_Subscribe.html">Newsletter</a></li></h2>
+            <h2 class="logoutStyle"><li><a href="DeModa_SignUp.html" class="logoutStyle">Log out</a></li></h2>
+        </ul>
+    </div>
+        
+    <div id="myAccountLayout">
+        <h1>Access Details</h1>
+        <ul id="myAccount">
+            <h3><li>Change of e-mail address</li></h3>
+                <span>If you wish to update the e-mail address associated with this account, please fill in the following fields. Your password is requested for security reasons.</span>
+        </ul>
+
+        <p>Your current e-mail address is:</p>
+
+        <form action="">
+            <input type="password" name="password" id="currentPW" placeholder="Current Password*" required><br>
+            <input type="email" name="email" id="newEmail" placeholder="New E-mail Address*" required>
+            <input type="email" name="email" id="newEmail" placeholder="Repeat E-mail Addrress*" required>
+            <input type="submit" value="Update E-mail" id="submitButton">
+        </form>
+    </div>   
+    <hr>
+    <div id="myAccountLayout">
+        <ul id="myAccount">
+            <h3><li>Change password</li></h3>
+                <span>If you wish to change the password to access your account, please provide the following information:</span>
+        </ul>
+
+        <p>Your current e-mail address is:</p>
+
+        <form action="">
+            <input type="password" name="password" id="currentPW" placeholder="Current Password*" required><br>
+            <input type="password" name="password" id="newPW" placeholder="New Password*" required>
+            <input type="password" name="password" id="newPW" placeholder="Repeat Password*" required>
+            <input type="submit" id="submitButton" value="Update Password">
+        </form>
+    </div>
+    </section>
+    <footer>
+        <nav id="footer">
+            <ul>
+                <li><a href="Aboutus.html">About us</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="Contactus.html">Contact us</a></li>
+                <li><a href="T&C.html">T&C</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li>Follow Us:
+                    <div class="social">
+                        <a href="https://www.facebook.com/" class="link facebook" target="_parent"><span
+                                class="fa fa-facebook-square"></span></a>
+                        <a href="https://twitter.com/" class="link twitter" target="_parent"><span
+                                class="fa fa-twitter"></span></a>
+                        <a href="https://www.instagram.com/de_moda_2020/" class="link instagram" target="_parent"><span
+                                class="fa fa-instagram"></span></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="keywords" content="De Moda,Fashion" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Add To Cart</title>
+    <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="./addToCart.css">
+</head>
+
+<body>
+    <header>
+        <a href="homepage.html"><img src="logo.png" alt="De Moda" style="width:75px;height: 75px" /></a>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="payment page.html">My Cart</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">My Order</button>
+                        <div class="dropdown-content">
+                            <a href="Orders and returns.html">Order&Return</a>
+                            <a href="receipt.html">Receipt</a>
+                            <a href="historyOrder.html">History Order</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <form> <input type="search" name="search" id="search" placeholder="Search..."></form>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"> 
+                        <img src="accountLogo.png" style="width:30px;height: 30px;"/>Account</button>
+                        <div class="dropdown-content">
+                            <a href="account.html">My Account</a>
+                            <a href="login.html">Sign in</a>
+                            <a href="Demoda_SignUp.html">Sign up</a>
+                            <a href="#">Sign out</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="top">
+            <div class="title">
+                <h2>&#9883; Add To Cart &#9883;</h2>
+            </div>
+            <div class="prodImg">
+                <img
+                    src="https://g-search1.alicdn.com/img/bao/uploaded/i4/imgextra/i3/893060157/O1CN01ypAJS11D1wmIxp2ox_!!0-saturn_solar.jpg_580x580Q90.jpg_.webp">
+            </div>
+            <div>
+                <table class="prodetails">
+                    <tr>
+                        <td id="name" colspan="2">Sweet French first love super fairy forest long skirt <br></td>
+                    </tr>
+                    <tr>
+                        <td id="price" colspan="2">RM60.00<br><br></th>
+                    </tr>
+                    <tr>
+                        <td id="shipping" colspan="2"><img
+                                src="https://pngimage.net/wp-content/uploads/2018/05/delivery-order-logo-png-3.png">
+                            Shipping
+                            Fee: RM5.00<br><br></th>
+                    </tr>
+                    <tr>
+                        <td id="chooseSize">
+                            <form>
+                                <label for="size">Size: </label>
+                                <input type="radio" id="S" name="size" /><label for="S">S</label>
+                                <input type="radio" id="M" name="size" /><label for="M">M</label>
+                                <input type="radio" id="L" name="size" /><label for="L">L</label>
+                                <input type="radio" id="XL" name="size" /><label for="XL">XL</label>
+                                <br><br>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="quantity">
+                            <form>
+                                <label for="quantity"> Quantity:</label>
+                                <input type="number" id="quantity" name="quantity" min="1" max="50">
+                                <input type="submit" value="add">
+                            </form><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="add">
+                            <form>
+                                <input onclick="ok()" type="image" style="opacity:0.9;"
+                                    src="https://cdn.pixabay.com/photo/2016/10/17/08/27/add-to-cart-1747164_960_720.png"
+                                    alt="addToCart" width="220px" height="50px">
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <script>
+                function ok() {
+                    alert("Successfully added to cart");
+                }
+            </script>
+
+        </div>
+        <div class="bottom">
+            <div class="titleDetails">
+                <h3>Product Details &#9753;</h3>
+            </div>
+            <div class="details">
+                <p>Material: Cotton</p>
+                <p>Categories: Women's Clothing > Dresses</p>
+                <table class="sizeTable">
+                    <caption>Size Table</caption>
+                    <tr>
+                        <th>Size</th>
+                        <th>Waist</th>
+                        <th>Hip</th>
+                        <th>Length</th>
+                    </tr>
+                    <tr>
+                        <td>S</td>
+                        <td>62-72</td>
+                        <td>72-92</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>64-74</td>
+                        <td>74-94</td>
+                        <td>97</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>66-76</td>
+                        <td>76-96</td>
+                        <td>99</td>
+                    </tr>
+                    <tr>
+                        <td>XL</td>
+                        <td>68-78</td>
+                        <td>78-98</td>
+                        <td>101</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav id="footer">
+            <ul>
+                <li><a href="Aboutus.html">About us</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="Contactus.html">Contact us</a></li>
+                <li><a href="T&C.html">T&C</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li>Follow Us:
+                    <div class="social">
+                        <a href="https://www.facebook.com/" class="link facebook" target="_parent"><span
+                                class="fa fa-facebook-square"></span></a>
+                        <a href="https://twitter.com/" class="link twitter" target="_parent"><span
+                                class="fa fa-twitter"></span></a>
+                        <a href="https://www.instagram.com/de_moda_2020/" class="link instagram" target="_parent"><span
+                                class="fa fa-instagram"></span></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+div.Women , div.Men,div.Kid{
+    overflow:auto;
+    text-align: center;
+    float: left;
+    color: rgb(100, 57, 0);
+    width: 15%;
+    position: relative;
+    font-size: 26px;
+    height: 100%;
+    background-color: rgb(204, 240, 204);
+} 
+.Women a{
+    color: rgb(100, 57, 0);
+    font-size: 26px;
+    text-decoration: none;
+}
+.right{
+    padding-bottom: 50px;
+}
+table.categories{
+    margin-left: 10px;
+    margin-right: 10x;
+    border-spacing: 5px 5px;
+}
+img#women,img#men,img#kid{
+     width: 145px;
+     height: 165px;
+ }
+
+h4{
+    font-size: 30px;
+    text-decoration: underline overline;
+    margin-top: 8%;
+    margin-bottom: -10%;
+}
+
+h5{
+    font-size: 28px;
+    text-decoration: underline;
+    margin-bottom: -0.3px;
+}
+div.product table{
+    float: left;
+    border:2px solid rgb(223, 208, 169);
+    table-layout: fixed;
+    width: 20%;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 1.5%;
+    border-spacing: 0px;
+    min-height:380px ;
+  border-collapse: collapse;
+}
+
+div.product img{
+    width: 200px;
+    height: 200px;
+    margin-top: 1.5px;
+}
+.product{
+    font-size: 25px;
+}
+.product table{
+    background-color: rgb(241, 247, 225);
+}
+td#price{
+    font-size: 20px;
+    border-color: transparent;
+}
+td#name{
+    font-size: 25px;
+    border-color: transparent;
+}
+td#choose{
+    border: 1px solid rgb(223, 208, 169);
+}
+img#like,img#like1,img#like2{
+    width: 30px;
+    height: 30px;
+}
+
+img#addCard{
+    width: 40px;
+    height: 40px;
+}
+button#card{
+    background-color: transparent;
+    border-color: transparent;
+    border-width: 5.3px 30px;
+}
+button#like{
+    background-color: transparent;
+    border-color: transparent;
+    border-width: 9.5px 33.8px;
+}
+.pageCount a{
+    display: block;
+    text-align: center;
+    float: left;
+    margin-left: 10%;
+    margin-top: 4%;
+    text-decoration: none;
+}
+.categoriesGen a{
+    text-decoration: none;  
+    color: black;
+    margin-left: 20%; 
+    margin-right: 10%;
+}
+.categoriesGen{
+    display: block;
+    width: 100%;
+    background-color: rgb(204, 240, 204);
+   
+}
+.product::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+

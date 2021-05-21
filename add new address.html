@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - Add New Address | De Moda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="add new address.css">
+</head>
+<body>
+    <header>
+        <a href="homepage.html"><img src="logo.png" alt="De Moda" style="width:75px;height: 75px" /></a>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="payment page.html">My Cart</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">My Order</button>
+                        <div class="dropdown-content">
+                            <a href="Orders and returns.html">Order&Return</a>
+                            <a href="receipt.html">Receipt</a>
+                            <a href="historyOrder.html">History Order</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <form> <input type="search" name="search" id="search" placeholder="Search..."></form>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"> 
+                        <img src="accountLogo.png" style="width:30px;height: 30px;"/>Account</button>
+                        <div class="dropdown-content">
+                            <a href="account.html">My Account</a>
+                            <a href="login.html">Sign in</a>
+                            <a href="Demoda_SignUp.html">Sign up</a>
+                            <a href="#">Sign out</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+    <div id="menuLayout">
+        <ul id="menu">
+            <h2><li><a href="account.html">My account</a></li></h2>
+            <h2><li><a href="address book.html">Address book</a></li></h2>
+            <h2><li><a href="Personal details.html">Personal details</a></li></h2>
+            <h2><li><a href="Access details.html">Access details</a></li></h2>
+            <h2><li><a href="DeModa_Subscribe.html">Newsletter</a></li></h2>
+            <h2 class="logoutStyle"><li><a href="DeModa_SignUp.html" class="logoutStyle">Log out</a></li></h2>
+        </ul>
+    </div>
+        
+    <div id="myAccountLayout">
+        <h1>Add New Address</h1>
+        <p>Keep your addresses and contact details updated.</p>
+
+        <form action="">
+            <input type="text" name="firstName" id="first_name" required placeholder="Name">
+            <input type="text" name="lastName" id="last_name" required placeholder="Surname">
+            <input type="text" name="address1" id="address_1" required placeholder="Address">
+            <input type="text" name="address2" id="address_2" placeholder="Optional">
+            <input type="text" name="postCode" id="post_code" required placeholder="Postal Code">
+            <input type="text" name="city" id="city" required placeholder="City">
+            <select name="stateName" id="state_name" required>
+                <option value="select" selected disabled>Select</option>
+                <option value="state1">Johor</option>
+                <option value="state2">Kedah</option>
+                <option value="state3">Kelantan</option>
+                <option value="state4">Malacca</option>
+                <option value="state5">Negeri Sembilan</option>
+                <option value="state6">Pahang</option>
+                <option value="state7">Penang</option>
+                <option value="state8">Perak</option>
+                <option value="state9">Perlis</option>
+                <option value="state10">Sabah</option>
+                <option value="state11">Sarawak</option>
+                <option value="state12">Selangor</option>
+                <option value="state13">Terengganu</option>
+                <option value="state14">Kuala Lumpur</option>
+                <option value="state15">Labuan</option>
+                <option value="state16">Putrajaya</option>
+            </select>
+            <input type="tel" name="phoneNumber" id="phone_number" required placeholder="010-527 9846" minlength="12" maxlength="13">
+            <input type="submit" id="submitButton" value="Add New Address">
+        </form>
+    </div>   
+    </section>
+    <footer>
+        <nav id="footer">
+            <ul>
+                <li><a href="Aboutus.html">About us</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="Contactus.html">Contact us</a></li>
+                <li><a href="T&C.html">T&C</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li>Follow Us:
+                    <div class="social">
+                        <a href="https://www.facebook.com/" class="link facebook" target="_parent"><span
+                                class="fa fa-facebook-square"></span></a>
+                        <a href="https://twitter.com/" class="link twitter" target="_parent"><span
+                                class="fa fa-twitter"></span></a>
+                        <a href="https://www.instagram.com/de_moda_2020/" class="link instagram" target="_parent"><span
+                                class="fa fa-instagram"></span></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

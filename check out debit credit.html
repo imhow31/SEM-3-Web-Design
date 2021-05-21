@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out | Debit Credit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="check out debit credit.css">
+</head>
+<body>
+    <header>
+        <a href="homepage.html"><img src="logo.png" alt="De Moda" style="width:75px;height: 75px" /></a>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="payment page.html">My Cart</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">My Order</button>
+                        <div class="dropdown-content">
+                            <a href="Orders and returns.html">Order&Return</a>
+                            <a href="receipt.html">Receipt</a>
+                            <a href="historyOrder.html">History Order</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <form> <input type="search" name="search" id="search" placeholder="Search..."></form>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"> 
+                        <img src="accountLogo.png" style="width:30px;height: 30px;"/>Account</button>
+                        <div class="dropdown-content">
+                            <a href="account.html">My Account</a>
+                            <a href="login.html">Sign in</a>
+                            <a href="Demoda_SignUp.html">Sign up</a>
+                            <a href="#">Sign out</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+    <div id="deModa_playground">
+        <div id="itemsLayout">
+            <div id="checkOutMethods">
+                <table>
+                    <tr>
+                        <td class="payment-methods"><a href="check out debit credit.html"><img src="credit_debit.PNG"><br>Credit/Debit Card</td></a>
+                        <td class="payment-methods"><a href="check out tng.html"><img src="touch_n_go.PNG"><br>Touch 'n Go eWallet</td></a>
+                        <td class="payment-methods"><a href="check out online banking.html"><img src="online_banking.png"><br>Online Banking</td></a>
+                    </tr>
+                </table>
+                <table id="cardDetails">
+                    <tr>
+                        <td class="cardDetails">
+                            <form id="form">
+                                <img src="https://www.freepnglogos.com/uploads/visa-and-mastercard-logo-26.png" alt=""><br>
+                                <label class="cardDetails" id="cardNum" for="">Card Number*</label><br>
+                                <input id="cardDetails" type="text" name="" id="" placeholder="1234 5678 9012 3456" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" maxlength="19" required><br>
+                                
+                                <label class="cardDetails" for="">Name on card*</label><br>
+                                <input id="cardDetails" type="text" name="" id="" placeholder="Donald Trump" required><br>
+        
+                                <label class="cardDetails" for="">Expiration Day*</label><br>
+                                <input id="cardDetails" type="text" name="" id="" placeholder="MM/YY" maxlength="5" pattern="[1-12]{2}/[20-30]{2}" required><br>
+        
+                                <label class="cardDetails" for="">CVV*</label><br>
+                                <input id="cardDetails" type="text" name="" id="" placeholder="123" maxlength="3" required><br>
+        
+                                <input type="checkbox" name="" id="saveCard" checked>
+                                <label id="saveCard" for="">Save Card</label><br>
+                                <p class="saveCard">I acknowledge that my card information is saved in my Lazada 
+                                    account and One Time Password might not be required for transactions on Lazada.
+                                </p>
+                            </form>
+                            <a href="DeModa_Payment.html"><input type="submit" name="" id="checkoutButton" value="PROCEED TO CHECKOUT"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+        <div id="summaryLayout">
+            <div id="summaryContainer">
+                
+                <div id="orderSummary">
+                    <h3>Order Summary</h3>
+                </div>
+                <div id="subTotalCount">
+                    <table>
+                        <tr>
+                            <td><span id="subtotal">Subtotal (Shipping Fees included)</span></td>
+                            <td><span id="subtotalCount">RM510.00</span></td>
+                        </tr>
+                        <tr>
+                            <td><span id="total">Total Amount</span></td>
+                            <td><span id="totalCount">RM510.00</span></td>
+                        </tr>
+                    </table>                    
+                </div>
+
+            
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <nav id="footer">
+            <ul>
+                <li><a href="Aboutus.html">About us</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="Contactus.html">Contact us</a></li>
+                <li><a href="T&C.html">T&C</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li>Follow Us:
+                    <div class="social">
+                        <a href="https://www.facebook.com/" class="link facebook" target="_parent"><span
+                                class="fa fa-facebook-square"></span></a>
+                        <a href="https://twitter.com/" class="link twitter" target="_parent"><span
+                                class="fa fa-twitter"></span></a>
+                        <a href="https://www.instagram.com/de_moda_2020/" class="link instagram" target="_parent"><span
+                                class="fa fa-instagram"></span></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

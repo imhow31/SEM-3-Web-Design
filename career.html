@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="keywords" content="De Moda,Fashion" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Career</title>
+    <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="./career.css">
+</head>
+
+<body>
+    <header>
+        <a href="homepage.html"><img src="logo.png" alt="De Moda" style="width:75px;height: 75px" /></a>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="payment page.html">My Cart</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">My Order</button>
+                        <div class="dropdown-content">
+                            <a href="Orders and returns.html">Order&Return</a>
+                            <a href="receipt.html">Receipt</a>
+                            <a href="historyOrder.html">History Order</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <form> <input type="search" name="search" id="search" placeholder="Search..."></form>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"> 
+                        <img src="accountLogo.png" style="width:30px;height: 30px;"/>Account</button>
+                        <div class="dropdown-content">
+                            <a href="account.html">My Account</a>
+                            <a href="login.html">Sign in</a>
+                            <a href="Demoda_SignUp.html">Sign up</a>
+                            <a href="#">Sign out</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="imgCareer">
+            <img src="https://enrichjobs.com/wp-content/uploads/2019/10/Oxstu-week-2.jpg" alt="">
+        </div>
+        <div class="Career">
+            <h2>Career</h2>
+            <p>Let's Make Fashion Happen
+                You have the talent, we have the tools. Join us and accomplish great things in an award-winning company
+                that’s shaping the future of eCommerce in Asia.</p>
+
+            <div class="jobs" id="design" onclick="displayDesign()">
+                <h4>Fashion Designer</h4>
+            </div>
+            <div class="jobs" id="model" onclick="displayModel()">
+                <h4>Professional Clothing Model</h4>
+            </div>
+            <div class="jobs" id="Photographers" style="margin-top: -2%;" onclick="displayPhotog()">
+                <h4>Photographers, stylists and make-up artists</h4>
+            </div>
+
+
+            <div id="imageDesign" style="display: none;">
+                <img style="width: 300px;height: 170px;"
+                    src="https://www.careergirls.org/wp-content/uploads/2018/05/FashionDesigner_1920x1080.jpg">
+                <nav>
+                    <ul>
+                        <li>Created tech packs, reviewed and evaluated lab dips.</li>
+                        <li>Maintained quality standards for production and fit.</li>
+                        <li> Evaluated prototypes, pre-production and production samples.</li>
+                        <li>Created new designs for each season (both menswear and womenswear).</li>
+                        <li>Made specification sheets with measurements of graphics and garments and Pantone colors.
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="imageModel" style="display: none;">
+                <img style="width: 300px;height: 170px;"
+                    src="https://c4.wallpaperflare.com/wallpaper/700/900/859/summer-floral-prints-clothing-models-sky-wallpaper-thumb.jpg">
+                <nav>
+                    <ul>
+                        <li>good grooming and the ability to take care of your appearance.</li>
+                        <li>confidence, self-reliance and discipline.</li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div id="imagePhotog" style="display: none;">
+                <img style="width: 300px;height: 170px;"
+                    src="https://media.gettyimages.com/photos/photographer-model-and-makeup-artist-on-set-of-a-fashion-shoot-picture-id93192178">
+                    <br><br><p>Creativity, passion and energy are highly valued at Whitesoot and we're eager to work with those of you who are bursting with them. Let's wow the world with our ideas!</p>
+            </div>
+
+            <script>
+                function displayDesign() {
+                    document.getElementById("model").style.visibility = "hidden";
+                    document.getElementById("Photographers").style.visibility = "hidden";
+                    var x = document.getElementById("imageDesign");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                        document.getElementById("model").style.visibility = "visible";
+                        document.getElementById("Photographers").style.visibility = "visible";
+                    }
+                }
+                function displayModel() {
+                    document.getElementById("Photographers").style.visibility = "hidden";
+                    var y = document.getElementById("imageModel");
+                    if (y.style.display === "none") {
+                        y.style.display = "block";
+                    } else {
+                        y.style.display = "none";
+                        document.getElementById("Photographers").style.visibility = "visible";
+                    }
+                }
+                function displayPhotog() {
+                    var y = document.getElementById("imagePhotog");
+                    if (y.style.display === "none") {
+                        y.style.display = "block";
+                    } else {
+                        y.style.display = "none";
+                    }
+                }
+            </script>
+        </div>
+
+    </section>
+    <footer>
+        <nav id="footer">
+            <ul>
+                <li><a href="Aboutus.html">About us</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="Contactus.html">Contact us</a></li>
+                <li><a href="T&C.html">T&C</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li>Follow Us:
+                    <div class="social">
+                        <a href="https://www.facebook.com/" class="link facebook" target="_parent"><span
+                                class="fa fa-facebook-square"></span></a>
+                        <a href="https://twitter.com/" class="link twitter" target="_parent"><span
+                                class="fa fa-twitter"></span></a>
+                        <a href="https://www.instagram.com/de_moda_2020/" class="link instagram" target="_parent"><span
+                                class="fa fa-instagram"></span></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

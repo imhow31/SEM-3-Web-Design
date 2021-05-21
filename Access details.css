@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+ul#menu > h2 > li, ul#myAccount > h3 > li{
+    list-style-type: none;
+    margin: 1em 1em 5px 0;
+    font-size: 25px;
+}
+
+ul#menu > h2 > li > a, ul#myAccount > h3 > li > a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+ul#menu > h3 > li > a:hover, ul#myAccount > h3 > li > a:hover{
+    display: inline-block;
+    background-color: gray;
+}
+
+div#menuLayout{
+    width: 20%;
+    float: left;
+    margin-top: 4em;
+}
+
+div#myAccountLayout{
+    width: 80%;
+    float: right;
+}
+
+h1{
+    padding-left: 1em;
+}
+
+ul#myAccount > h3 {
+    margin-bottom: 0;
+}
+
+h2.logoutStyle, .logoutStyle{
+    font-size: 17.5px;
+    margin-top: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;    
+}
+
+#currentPW, #newEmail, #newPW{
+    margin: 1.5em 0 1.5em 2.2em;
+    height: 30px;
+    width: 40%;
+    border: none;
+    border-bottom: 2px solid gray;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: large;
+}
+
+form > input:focus{
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+}
+
+p{
+    margin-top: 30px;
+    margin-left: 1.4em;
+}
+
+input#submitButton{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    width: 200px;
+    height: 50px;
+    text-transform: capitalize;
+    margin-bottom: 2.3em;
+    margin-left: 2.8em;
+}
+
+input#submitButton:hover{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    width: 200px;
+    height: 50px;
+    text-transform: capitalize;
+}
+
+hr{
+    border-bottom: 2px solid rgb(102, 102, 102);
+    outline: none;
+    margin-left: 300px;
+    width: 1000px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+@media only screen and (max-width: 600px){
+    form > input{
+        margin: 1.5em 0 1.5em 2.2em;
+        height: 30px;
+        width: 300px;
+        border: none;
+        border-bottom: 2px solid gray;
+        background-color: rgba(255, 255, 255, 0);
+        font-size: large;
+    }
+
+    hr{
+        border-bottom: 2px solid rgb(102, 102, 102);
+        outline: none;
+        margin-left: 212px;
+        width: 378px;
+    }
+
+    ul#menu{
+        list-style-type: none;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+
+    div#menuLayout{
+        width: 30%;
+        float: left;
+        margin-top: 4em;
+    }
+    
+    div#myAccountLayout{
+        width: 70%;
+        float: right;
+    }
+}
+
+section{
+    clear: both;
+    content: "";
+}
